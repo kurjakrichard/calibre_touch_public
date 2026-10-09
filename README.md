@@ -1,19 +1,26 @@
-# Calibre Touch
+# Calibre Touch – public website
 
-Calibre clone for touchscreen devices.
+Static HTML/CSS/JS site for the Calibre Touch app. No build step.
 
-Privacy policy
-1. General provisions
-1.1 Calibre touch application is developed by Richard Kurjak.
+```
+├── index.html      Landing page (features, privacy summary, contact)
+├── privacy.html    Full privacy policy
+├── css/style.css   Styles (colors from the app logo, light + dark mode)
+├── js/main.js      Mobile menu + footer year
+└── assets/         logo.png (512px) and favicon.png
+```
 
-1.2 The application does not require the user to provide any personal or confidential information and does not collect it during the use of the application.
+## Preview locally
 
-1.3 To open books and documents, display them in the application lists, and search them, the system permission to access files is required. The application does not modify, move, or forward files.
+Open `index.html` in a browser, or serve the folder:
 
-1.4 The application do not send anonymous application usage statistics.
+```
+python -m http.server 8000
+```
 
-2. Providing information to third parties
-The application does not transfer the received information to third parties.
+then visit http://localhost:8000.
 
-3. Contact information
-If you have any questions, you can contact us at: kurjak.richard@gmail.com
+## Publishing
+
+The repository root can be deployed as-is to GitHub Pages, Netlify, or any static host.
+For GitHub Pages: Settings → Pages → Deploy from branch → `main` / `(root)`.
