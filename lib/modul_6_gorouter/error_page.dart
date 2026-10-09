@@ -10,10 +10,12 @@ class ErrorPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-        child: Text(
-      'Error: ${error?.message}',
-      style: Theme.of(context).textTheme.headlineLarge,
-    ));
+    return Scaffold(
+      body: Center(
+          child: Text(
+        'Error: ${error?.message}',
+        style: Theme.of(context).textTheme.headlineLarge,
+      )),
+    );
   }
 }

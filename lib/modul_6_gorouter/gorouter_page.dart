@@ -17,6 +17,11 @@ class GorouterPage extends StatelessWidget {
                     onPressed: () => context.goNamed(Routes.home.name),
                     child: const Text('HomePage'),),
               ),
+                        const Center(child: Text('Error page')),
+          Center(child:   ElevatedButton(
+                    onPressed: () => context.go('Routes.home.path'),
+                    child: const Text('Error page'),),
+              ),
         ],
       ), ); 
   }
