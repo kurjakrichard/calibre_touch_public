@@ -33,8 +33,13 @@
         <nav class="toc" aria-label="Help topics">
           <a href="#getting-started">Getting started</a>
           <a href="#menu-settings">Menu and settings</a>
-          <a href="#search">Searching</a>
+          <a href="#search">Searching and filtering</a>
           <a href="#views">Library views</a>
+          <a href="#reader">Reading</a>
+          <a href="#read-aloud">Reading aloud</a>
+          <a href="#reading-log">Reading log</a>
+          <a href="#editing">Editing books</a>
+          <a href="#tidy">Bulk edit and duplicates</a>
         </nav>
       </div>
     </section>
@@ -56,7 +61,7 @@
           </article>
 
           <article class="step">
-            <a class="shot" href="assets/Help/2.png"><img src="assets/Help/2.png" alt="Welcome screen with the Next button at the bottom" width="452" height="957" loading="lazy"></a>
+            <a class="shot" href="assets/Help/14.png"><img src="assets/Help/14.png" alt="Welcome screen with the Next button and three page dots" width="438" height="938" loading="lazy"></a>
             <div class="step-text">
               <span class="step-num">2</span>
               <h3>Welcome</h3>
@@ -65,7 +70,7 @@
           </article>
 
           <article class="step">
-            <a class="shot" href="assets/Help/3.png"><img src="assets/Help/3.png" alt="Setup page asking where Calibre Touch should keep your books, with Choose folder and Use default buttons" width="452" height="957" loading="lazy"></a>
+            <a class="shot" href="assets/Help/15.png"><img src="assets/Help/15.png" alt="Setup page asking where Calibre Touch should keep your books, with Choose folder, Use default and a warning about network and cloud folders" width="432" height="938" loading="lazy"></a>
             <div class="step-text">
               <span class="step-num">3</span>
               <h3>Choose where your books are kept</h3>
@@ -74,6 +79,7 @@
                 <li><strong>Use default</strong> keeps your books in the app's own folder.</li>
                 <li><strong>Choose folder</strong> lets you pick another folder, for example an existing Calibre library on your device.</li>
               </ul>
+              <p class="hint">Don't put the library on a network drive or in a cloud-synced folder (OneDrive, Google Drive, Dropbox…): that is not safe and can corrupt it.</p>
             </div>
           </article>
 
@@ -97,11 +103,20 @@
           </article>
 
           <article class="step">
-            <a class="shot" href="assets/Help/6.png"><img src="assets/Help/6.png" alt="You're all set screen with the Get Started button" width="452" height="957" loading="lazy"></a>
+            <a class="shot" href="assets/Help/16.png"><img src="assets/Help/16.png" alt="You're all set screen with the Get Started button" width="445" height="937" loading="lazy"></a>
             <div class="step-text">
               <span class="step-num">6</span>
               <h3>You're all set</h3>
               <p>Tap <strong>Get Started</strong> to open your library. You can change these choices later in Settings.</p>
+            </div>
+          </article>
+
+          <article class="step">
+            <a class="shot" href="assets/Help/17.png"><img src="assets/Help/17.png" alt="Empty library with the library folder, a Settings button and the + button" width="442" height="942" loading="lazy"></a>
+            <div class="step-text">
+              <span class="step-num">7</span>
+              <h3>Add your books</h3>
+              <p>A new library is empty. Tap <strong>+</strong> in the bottom-right corner to add a book file (EPUB, MOBI, AZW3, FB2, PDF, DOCX, ODT, RTF, TXT and more). You can also open a book file with Calibre Touch from another app, or share it to Calibre Touch.</p>
             </div>
           </article>
         </div>
@@ -115,19 +130,22 @@
 
         <div class="steps">
           <article class="step">
-            <a class="shot" href="assets/Help/7.png"><img src="assets/Help/7.png" alt="Side menu open with Continue reading and Settings" width="452" height="957" loading="lazy"></a>
+            <a class="shot" href="assets/Help/23.png"><img src="assets/Help/23.png" alt="Side menu with Continue reading, Reading log, Duplicates, Settings and Help" width="421" height="936" loading="lazy"></a>
             <div class="step-text">
               <h3>The side menu</h3>
               <p>Tap the <strong>☰</strong> menu button in the top-left corner to open the side menu.</p>
               <ul>
-                <li><strong>Continue reading</strong> opens the book you read last.</li>
+                <li><strong>Continue reading</strong> opens the book you read last. Press and hold it to choose from the books you read recently.</li>
+                <li><strong>Reading log</strong> opens your reading log and statistics (when the reading log is on).</li>
+                <li><strong>Duplicates</strong> lists books that are probably in your library more than once.</li>
                 <li><strong>Settings</strong> opens the app settings.</li>
+                <li><strong>Help</strong> opens this page.</li>
               </ul>
             </div>
           </article>
 
           <article class="step">
-            <a class="shot" href="assets/Help/8.png"><img src="assets/Help/8.png" alt="Settings screen with language, library folder, dark theme, built-in reader and open last book options" width="452" height="957" loading="lazy"></a>
+            <a class="shot" href="assets/Help/24.png"><img src="assets/Help/24.png" alt="Settings screen with language, library folder, dark theme, built-in reader, open last book and reading log options" width="430" height="942" loading="lazy"></a>
             <div class="step-text">
               <h3>Settings</h3>
               <ul>
@@ -136,6 +154,8 @@
                 <li><strong>Dark theme</strong>: switch between light and dark appearance.</li>
                 <li><strong>Built-in reader</strong>: open books inside Calibre Touch. Supported formats: EPUB, MOBI/AZW3, FB2, TXT, DOCX, ODT, RTF and PDF.</li>
                 <li><strong>Open last book on startup</strong>: continue reading where you left off when the app starts.</li>
+                <li><strong>Reading log</strong>: measure your reading time and keep a log of the books you read. When it is off, nothing is measured and the reading log is hidden.</li>
+                <li><strong>Reading data</strong>: <strong>Back up</strong> saves your reading log, statistics, "want to read" list, bookmarks and highlights into one file, wherever you choose. <strong>Restore</strong> puts such a backup back; your current reading data is replaced.</li>
               </ul>
               <p>Tap <strong>Done</strong> to save your changes.</p>
             </div>
@@ -147,15 +167,35 @@
     <!-- Search -->
     <section id="search" class="section">
       <div class="container">
-        <h2>Searching your library</h2>
+        <h2>Searching and filtering</h2>
 
         <div class="steps">
           <article class="step">
             <a class="shot" href="assets/Help/9.png"><img src="assets/Help/9.png" alt="Search bar open above the book covers with the keyboard showing" width="452" height="957" loading="lazy"></a>
             <div class="step-text">
               <h3>Find a book</h3>
-              <p>Tap the <strong>search</strong> icon at the top of the screen and start typing a title or author. The list updates as you type. Accents don't matter, so "tuz" also finds "tűz".</p>
+              <p>Tap the <strong>search</strong> icon at the top of the screen, type words from the title, author, series, tags or description, then press <strong>Enter</strong> or tap the search icon in the field. Accents don't matter, so "tuz" also finds "tűz".</p>
               <p>Tap <strong>✕</strong> to clear the search and show all your books again.</p>
+            </div>
+          </article>
+
+          <article class="step">
+            <a class="shot" href="assets/Help/30.png"><img src="assets/Help/30.png" alt="Filter page with the categories Author, Series, Tags, Publisher, Languages, Format and Rating, and a Show 3 books button" width="423" height="941" loading="lazy"></a>
+            <div class="step-text">
+              <h3>Filter your library</h3>
+              <p>Tap the <strong>filter</strong> icon at the top of the screen (the badge shows how many values are picked) and choose a category: author, series, tags, publisher, languages, format or rating. Tick the values you want; long lists have a search field.</p>
+              <ul>
+                <li>Inside one category any ticked value matches; across categories every category must match.</li>
+                <li>The picked values appear above your books with the number of books shown. Tap <strong>✕</strong> on a value to remove it, or <strong>Clear filters</strong> to remove them all.</li>
+                <li>The filter works on the search result too, and lasts until you close the app or switch libraries.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="step">
+            <a class="shot" href="assets/Help/19.png"><img src="assets/Help/19.png" alt="The top-right menu open with Change view and Sort by" width="436" height="945" loading="lazy"></a>
+            <div class="step-text">
+              <h3>Sort your library</h3>
+              <p>Tap the <strong>⋮</strong> menu, then <strong>Sort by</strong>, and choose date added, title, author, series, rating, published or last modified, ascending or descending. The order is used in every view and is remembered. Title and author follow Calibre's sort order (for example "The Hobbit" sorts under H).</p>
             </div>
           </article>
         </div>
@@ -170,7 +210,7 @@
 
         <div class="steps">
           <article class="step">
-            <a class="shot" href="assets/Help/10.png"><img src="assets/Help/10.png" alt="Menu open with Change view and the options Covers, List and Table" width="452" height="957" loading="lazy"></a>
+            <a class="shot" href="assets/Help/20.png"><img src="assets/Help/20.png" alt="Change view menu with Covers (checked), List and Table" width="435" height="946" loading="lazy"></a>
             <div class="step-text">
               <h3>Change the view</h3>
               <p>Tap the <strong>⋮</strong> menu in the top-right corner, then <strong>Change view</strong>, and choose <strong>Covers</strong>, <strong>List</strong> or <strong>Table</strong>. The current view has a check mark.</p>
@@ -180,22 +220,212 @@
 
         <div class="view-grid">
           <figure>
-            <a class="shot" href="assets/Help/11.png"><img src="assets/Help/11.png" alt="Covers view showing book covers in a grid" width="452" height="957" loading="lazy"></a>
+            <a class="shot" href="assets/Help/18.png"><img src="assets/Help/18.png" alt="Covers view showing three book covers in a grid" width="445" height="941" loading="lazy"></a>
             <figcaption><strong>Covers</strong><br>A grid of book covers, ideal for browsing.</figcaption>
           </figure>
           <figure>
-            <a class="shot" href="assets/Help/12.png"><img src="assets/Help/12.png" alt="List view showing each book's cover, author and title" width="452" height="957" loading="lazy"></a>
+            <a class="shot" href="assets/Help/21.png"><img src="assets/Help/21.png" alt="List view showing each book's cover, author and title" width="445" height="940" loading="lazy"></a>
             <figcaption><strong>List</strong><br>A small cover with the author and title.</figcaption>
           </figure>
           <figure>
-            <a class="shot" href="assets/Help/13.png"><img src="assets/Help/13.png" alt="Table view with Title and Author columns" width="452" height="957" loading="lazy"></a>
-            <figcaption><strong>Table</strong><br>A compact table of titles and authors.</figcaption>
+            <a class="shot" href="assets/Help/22.png"><img src="assets/Help/22.png" alt="Table view with Title and Author columns" width="432" height="938" loading="lazy"></a>
+            <figcaption><strong>Table</strong><br>A compact table of every detail. Tap a column header to sort by it.</figcaption>
           </figure>
+        </div>
+        <p class="hint">A thin bar on a cover (and a percentage in the list and table) shows how far you have read the book; a green check mark shows a book you have logged as finished.</p>
+      </div>
+    </section>
+
+    <!-- Reading -->
+    <section id="reader" class="section">
+      <div class="container">
+        <h2>Reading</h2>
+        <p class="section-intro">Tap <strong>Read</strong> on a book to open it in the built-in reader. Tap the middle of the page to show or hide the bars.</p>
+        <div class="steps">
+          <article class="step">
+            <a class="shot" href="assets/Help/25.png"><img src="assets/Help/25.png" alt="A book's details page with its cover, details, rating and the Read, Edit book, Open folder, Add to reading log and Want to read buttons" width="432" height="926" loading="lazy"></a>
+            <div class="step-text">
+              <h3>A book's details</h3>
+              <p>Tap a book to see its details: series, publisher, publication date, languages, formats, identifiers, rating, page count and description. Tap a format to open the book in that format.</p>
+              <ul>
+                <li><strong>Read</strong> opens the book (in the built-in reader, or in the app of your choice if the built-in reader is off).</li>
+                <li><strong>Edit book</strong>: see <a href="#editing">Editing books</a>.</li>
+                <li><strong>Open folder</strong> shows the book's files.</li>
+                <li><strong>Add to reading log</strong> and <strong>Want to read</strong>: see <a href="#reading-log">Reading log</a>.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="step no-shot">
+            <div class="step-text">
+              <h3>Turning pages</h3>
+              <p>Scroll the text, or swipe left and right to turn a page. On a computer use the arrow keys, Page Up / Page Down or Space. Pull past the end of a chapter to go on to the next one. The slider at the bottom moves between chapters and shows the page number and percentage.</p>
+            </div>
+          </article>
+          <article class="step">
+            <a class="shot" href="assets/Help/26.png"><img src="assets/Help/26.png" alt="Reader showing a book cover, with the top bar (contents, night mode, read aloud, menu) and the chapter slider at the bottom" width="430" height="932" loading="lazy"></a>
+            <div class="step-text">
+              <h3>The top bar</h3>
+              <ul>
+                <li><strong>Contents</strong>: the side panel with the table of contents, your bookmarks and your highlights.</li>
+                <li><strong>Night mode</strong>: switches between light and dark pages.</li>
+                <li><strong>Read aloud</strong>: see <a href="#read-aloud">Reading aloud</a>.</li>
+                <li><strong>⋮</strong>: the reader's menu.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="step">
+            <a class="shot" href="assets/Help/27.png"><img src="assets/Help/27.png" alt="The reader's menu with Search in book, Bookmark, Sleep timer and Reading settings" width="437" height="932" loading="lazy"></a>
+            <div class="step-text">
+              <h3>The reader's menu</h3>
+              <p>Tap <strong>⋮</strong> for <strong>Search in book</strong> (Ctrl+F), <strong>Bookmark</strong> (Ctrl+B), the <strong>Sleep timer</strong> and the <strong>Reading settings</strong>.</p>
+            </div>
+          </article>
+          <article class="step">
+            <a class="shot" href="assets/Help/28.png"><img src="assets/Help/28.png" alt="Reading settings: font size, text width (narrow, medium, full), line spacing, justified text, reading-aloud speed and page colour" width="428" height="931" loading="lazy"></a>
+            <div class="step-text">
+              <h3>Reading settings</h3>
+              <p>In <strong>⋮ → Reading settings</strong> you can set the font size, the text width (narrow, medium or full), line spacing, justified text, the reading-aloud speed and the page colour (automatic, light, sepia or dark).</p>
+            </div>
+          </article>
+          <article class="step no-shot">
+            <div class="step-text">
+              <h3>Bookmarks, highlights and notes</h3>
+              <ul>
+                <li><strong>⋮ → Bookmark</strong> (Ctrl+B) bookmarks the paragraph at the top of the screen. A red ribbon shows that this place is bookmarked.</li>
+                <li>Press and hold a paragraph (right-click on a computer) for its menu: highlight it in one of five colours, add a note, bookmark it, copy it, or read aloud from there.</li>
+                <li>The side panel lists your bookmarks and highlights with their chapter and page. Tap one to jump there; use its <strong>⋮</strong> to edit the note or delete it.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="step no-shot">
+            <div class="step-text">
+              <h3>Searching in the book</h3>
+              <p><strong>⋮ → Search in book</strong> (Ctrl+F) opens the search panel. Type a word or phrase and press Enter. Every match is listed with its chapter and page, and marked in the text. The bar at the top steps through the matches (F3 / Shift+F3 on a computer); tap <strong>✕</strong> to end the search. Tick <strong>Ignore accents</strong> to find "kor" in "kör" and "kór" too.</p>
+            </div>
+          </article>
+          <article class="step no-shot">
+            <div class="step-text">
+              <h3>PDF books</h3>
+              <p>PDF books open in a page viewer. Zoom with two fingers or double-tap. Bookmarks work per page and can have a note; searching marks the matches on the pages.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <!-- Reading aloud -->
+    <section id="read-aloud" class="section section-alt">
+      <div class="container">
+        <h2>Reading aloud</h2>
+        <div class="steps">
+          <article class="step no-shot">
+            <div class="step-text">
+              <h3>Listen to a book</h3>
+              <p>Tap the <strong>read aloud</strong> icon in the top bar. Reading starts at the top of the screen, follows the text and marks the paragraph being read. To start somewhere else, press and hold a paragraph and choose <strong>Read aloud from here</strong>. The voice and its language come from your device's text-to-speech settings.</p>
+              <p>On Android, reading goes on with the screen locked or in another app. The notification and the lock screen show the book with buttons for the previous and next paragraph, pause and stop.</p>
+            </div>
+          </article>
+          <article class="step no-shot">
+            <div class="step-text">
+              <h3>Sleep timer</h3>
+              <p><strong>⋮ → Sleep timer</strong> stops reading after 5 to 60 minutes, or at the end of the chapter. The minutes left show on the read-aloud icon.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading log -->
+    <section id="reading-log" class="section">
+      <div class="container">
+        <h2>Reading log</h2>
+        <p class="section-intro">The reading log keeps the books you have read and want to read, and measures how much you read. It is stored only on your device and can be turned off in Settings.</p>
+        <div class="steps">
+          <article class="step">
+            <a class="shot" href="assets/Help/29.png"><img src="assets/Help/29.png" alt="Reading log with the Books read, Want to read and Statistics tabs, export and import buttons and the + button" width="430" height="942" loading="lazy"></a>
+            <div class="step-text">
+              <h3>Logging books</h3>
+              <ul>
+                <li>When you reach the end of a book, Calibre Touch offers to log it as read.</li>
+                <li>You can also log a book from its details page or menu, or add one by hand with <strong>+</strong> in the reading log.</li>
+                <li><strong>Want to read</strong> on a book's details page puts it on your "want to read" list.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="step no-shot">
+            <div class="step-text">
+              <h3>Statistics and daily goal</h3>
+              <p>The <strong>Statistics</strong> tab shows the books, pages and reading time of each year, books per month and year, the last 30 days, your reading streak and your most read authors.</p>
+              <p>Set a <strong>daily reading goal</strong> at the top of the tab. The circle shows today's minutes, the dots show the last seven days, and the reader tells you when you reach the goal.</p>
+            </div>
+          </article>
+          <article class="step no-shot">
+            <div class="step-text">
+              <h3>Export and import</h3>
+              <p>Export your log as a Goodreads CSV file, which Goodreads, StoryGraph, Bookstry and others can import, and import such files back. Books are matched with your library by ISBN or by title and author.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Editing -->
+    <section id="editing" class="section section-alt">
+      <div class="container">
+        <h2>Editing books</h2>
+        <p class="section-intro">Tap <strong>Edit book</strong> on a book's details page. Changes are saved with <strong>Save</strong>, into the Calibre library and the book's metadata.opf.</p>
+        <div class="steps">
+          <article class="step no-shot">
+            <div class="step-text">
+              <h3>Details</h3>
+              <ul>
+                <li>Title, author, publisher, series and number, tags, publication date, identifiers and description.</li>
+                <li><strong>Rating</strong>: tap the left half of a star for half a star, the right half for a whole one; tap the current rating to clear it.</li>
+                <li><strong>Languages</strong>: tap <strong>Add language</strong> and search by name or code.</li>
+                <li>An ISBN with a wrong check digit is marked as invalid, here and on the details page.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="step no-shot">
+            <div class="step-text">
+              <h3>Cover</h3>
+              <p>Take the cover from a picture file, a photo (on phones) or the book file itself, crop it, resize it, generate a simple cover from the title and author, or remove it. The size of the cover is shown under its title.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bulk edit and duplicates -->
+    <section id="tidy" class="section">
+      <div class="container">
+        <h2>Bulk edit and duplicates</h2>
+        <div class="steps">
+          <article class="step no-shot">
+            <div class="step-text">
+              <h3>Selecting several books</h3>
+              <p>Press and hold a book and choose <strong>Select</strong> (or Ctrl+click on a computer). While books are selected, tapping a book selects or deselects it. The top bar shows how many are selected, and lets you select all books shown or end the selection.</p>
+            </div>
+          </article>
+          <article class="step no-shot">
+            <div class="step-text">
+              <h3>Editing them together</h3>
+              <p>Tap <strong>Edit together</strong> to add or remove tags, set or remove the series (optionally numbering the books in the order shown), set or remove the publisher, set the languages or change the rating. Fields left empty change nothing. Title and author are changed book by book.</p>
+            </div>
+          </article>
+          <article class="step no-shot">
+            <div class="step-text">
+              <h3>Finding duplicates</h3>
+              <p><strong>Duplicates</strong> in the side menu lists books that are probably the same: the same ISBN (when the books also share an author or title words), the same title and author, or a one-volume edition next to its separate volumes. Different volumes, series and languages are not counted as duplicates.</p>
+              <p>Open or delete each book from its <strong>⋮</strong> menu, or mark a group as <strong>Not duplicates</strong> to hide it.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
       <div class="container narrow">
         <h2>Still need help?</h2>
         <p>Write to <a href="mailto:kurjak.richard@gmail.com">kurjak.richard@gmail.com</a> and describe what you're trying to do.</p>

@@ -3,8 +3,8 @@
 Static HTML/CSS/JS site for the Calibre Touch app. No build step.
 
 ```
-├── index.html      Landing page (features, privacy summary, contact)
-├── privacy.html    Full privacy policy
+├── index.html      Landing page (features, privacy policy, contact)
+├── help.html       Step-by-step help with screenshots (assets/Help)
 ├── css/style.css   Styles (colors from the app logo, light + dark mode)
 ├── js/main.js      Mobile menu + footer year
 └── assets/         logo.png (512px) and favicon.png

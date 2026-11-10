@@ -121,6 +121,8 @@ section[id] { scroll-margin-top: 64px; }
 .step p, .step ul { margin: 0 0 12px; }
 .step ul { padding-left: 20px; }
 .step li { margin-bottom: 6px; }
+/* A step without a screenshot yet (add <a class="shot"> and drop the class). */
+.step.no-shot { grid-template-columns: 1fr; max-width: 760px; }
 .step-num { display: inline-grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; background: var(--amber); color: var(--navy); font-weight: 700; margin-bottom: 12px; }
 .hint { color: var(--muted); font-size: .95rem; }
 
